@@ -19,12 +19,13 @@ body {
   background-color: rgb(41, 53, 53);
   z-index: 1;
   height: 80px;
+  opacity: 0.5;
 
   padding: 20px 40px;
   width: 100%;
   position: fixed;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -43,8 +44,35 @@ body {
   font-size: 16px;
   font-family: 'Arial', sans-serif;
   cursor: pointer;
+  position: relative;
 }
 
+/* Dropdown menu styles */
+.dropdown {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Position the dropdown right below the parent <li> */
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+.dropdown li {
+  padding: 5px 10px;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Show the dropdown on hover */
+.nav-links li:hover .dropdown {
+  display: block;
+}
 btn ,button{
   color: white;
   padding: 10px 20px;

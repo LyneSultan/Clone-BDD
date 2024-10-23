@@ -15,8 +15,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Center vertically */
-
 
 
 }
@@ -43,7 +41,7 @@
 
 }
 
-.foundations {
+.foundations ,.trending-section{
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
@@ -51,20 +49,32 @@
 
 
 }
+.trending-section{
+  display: flex;
+  justify-content:center;
+  background-color: azure;
+  padding: 10px;
+}
 
-.foundation-item {
+.foundation-item ,.trending-item{
   background-color: white;
   border-radius: 10px;
-  width: 256px;
-  height: 300px;
+
+  width: 20%;
+  height: 350px;
+
   box-shadow: 0 4px 6px rgba(207, 102, 102, 0.1);
   text-align: center;
-  margin: 40px 20px;
+  margin: 30px 10px;
 }
 
 .foundation-item img {
+
+  /* Icon size
   width: 100px;
-  /* Icon size */
+  height: 70px;*/
+  width: 50%;
+  height: 30%;
   margin-bottom: 15px;
 }
 
@@ -78,17 +88,56 @@
 
 .foundation-item p,
 .foundation-item li {
+
   font-size: 0.9em;
   line-height: 1.5;
   color: black;
 }
 
-.image-section img {
-  width: 100%;
-  height:500px;
-  
+.fixed-image-section {
+  background-image: url('./../assets/images/parallax-light.jpg');
+  background-attachment: fixed;
+  /* Fixes the background image in place */
+  background-size: cover;
+  /* Ensures the image covers the section */
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:30px;
+  overflow: hidden;
 }
 
+.first-parallax {
+  background-image: url('./../assets/images/Shared-Space-at-BDD.png');
+}
+.fixed-image-section>div> img {
+  width: 100%; /* Ensures the image doesn’t overflow horizontally */
+  height: 50%; /* Ensures the image doesn’t overflow vertically */
+   /* Removes any extra space below the image */
+}
+
+.second-parallax {
+  background-image: url('./../assets/images/parallax-light.jpg');
+  justify-content: center;
+
+}
+
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.content div{
+  flex: 1;
+  text-align: center;
+}
 .services-container {
   display: flex;
   flex-wrap: wrap;
@@ -98,7 +147,7 @@
 }
 
 .service-box {
-  background-color: white;
+  background-image: url('./../assets/images/grey-bg.jpg');
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -109,7 +158,9 @@
   justify-content: space-between;
   height: 500px;
 }
-
+.service-box:hover {
+  transform: scale(1.05);
+}
 .image-box {
   flex-grow: 2;
 }
@@ -123,7 +174,8 @@
 .service-box h3 {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 10px;  color: #000;
+  margin-bottom: 10px;
+  color: #000;
 
 }
 
@@ -136,7 +188,8 @@
   margin: 5px 0;
   text-align: left;
   position: relative;
-  padding-left: 15px;  color: #000;
+  padding-left: 15px;
+  color: #000;
 
 }
 
@@ -146,16 +199,16 @@
   left: 0;
   font-size: 12px;
 }
-.download-app{
+
+.download-app {
   display: flex;
   justify-content: center;
   padding: 50px;
 
 }
-.download-app buttton{
+
+.download-app buttton {
   padding: 50px;
   display: flex;
   flex-direction: row;
 }
-
-
