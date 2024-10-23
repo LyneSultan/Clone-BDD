@@ -50,8 +50,7 @@ h1 {
 
 }
 
-.foundations,
-.trending-section {
+.foundations {
   display: flex;
   justify-content: space-around;
   background-color: rgbrgb(235, 240, 245);
@@ -233,4 +232,14 @@ h1 {
   justify-content: center;
   gap: 50px;
 
+}
+
+.community {
+  display: flex;
+  justify-content: space-around;
+}
+
+.community>div>img:hover {
+  opacity: 0.5;
+  /* Change opacity on hover */
 }
