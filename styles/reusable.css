@@ -7,6 +7,8 @@
 body {
   overflow-x: hidden;
   color: black;
+  background-color: rgb(235, 240, 245);
+  ;
 
 
   overflow-y: scroll;
@@ -49,15 +51,18 @@ body {
 
 /* Dropdown menu styles */
 .dropdown {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   position: absolute;
-  top: 100%; /* Position the dropdown right below the parent <li> */
+  top: 100%;
+  /* Position the dropdown right below the parent <li> */
   left: 0;
   background-color: white;
   list-style: none;
   padding: 10px;
   margin: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Optional: Add a shadow */
 }
 
 .dropdown li {
@@ -73,10 +78,11 @@ body {
 .nav-links li:hover .dropdown {
   display: block;
 }
-btn ,button{
+
+btn,
+button {
   color: white;
   padding: 10px 20px;
-  font-size: 16px;
   font-weight: bold;
   border: none;
   border-radius: 30px;
@@ -96,7 +102,8 @@ btn ,button{
   margin: 0 20px;
 }
 
-.footer-section h4, .footer-section h5 {
+.footer-section h4,
+.footer-section h5 {
   color: #f4f4f4;
   margin-bottom: 20px;
 }
