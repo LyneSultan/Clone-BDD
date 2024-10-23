@@ -1,0 +1,8 @@
+.black{
+  color: black;
+}
+.blue-btn{  background-color: #007bff;}
+.black-btn{  background-color:black}
+.blue-hover:hover {
+  background-color: gray; /* Change this color to whatever you want */
+}

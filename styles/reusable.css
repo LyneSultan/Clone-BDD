@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  color: black;
+
+
+  overflow-y: scroll;
+}
+
+/* Navbar Container */
+.navbar {
+  position: sticky;
+  /* Sticky positioning */
+  background-color: rgb(41, 53, 53);
+  z-index: 1;
+  height: 80px;
+
+  padding: 20px 40px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+}
+
+btn ,button{
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h4, .footer-section h5 {
+  color: #f4f4f4;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links div {
+  margin-right: 20px;
+}
+
+.footer-links h5 {
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.contact ul li {
+  margin-bottom: 10px;
+}
+
+.contact ul li i {
+  margin-right: 10px;
+}
+
+.app-buttons a img {
+  width: 140px;
+  margin-right: 10px;
+}
+
+.terms {
+  margin-top: 20px;
+}
+
+.terms a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #bbb;
+}
+
+.footer-bottom a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
+
+.social-icons a {
+  color: #bbb;
+  margin-left: 10px;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.fa {
+  font-size: 16px;
+}
