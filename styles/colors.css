@@ -4,5 +4,17 @@
 .blue-btn{  background-color: #007bff;}
 .black-btn{  background-color:black}
 .blue-hover:hover {
-  background-color: gray; /* Change this color to whatever you want */
+  background-color: rgb(233, 252, 255);
+}
+.green-hover:hover {
+  background-color: rgb(230, 248, 230);
+}
+.pink-hover:hover {
+  background-color: rgb(255, 239, 255);
+}
+.red-hover:hover {
+  background-color: rgb(253, 222, 224);
+}
+.yellow-hover:hover {
+  background-color: rgb(247, 221, 255);
 }
